@@ -1,0 +1,170 @@
+/* variables */
+
+:root {
+  --primary: 251, 191, 77;
+  --secondary: 12, 29, 57;
+  --alt: #76829a;
+  --gray: 201, 209, 222;
+  --imprint-background: #fff;
+}
+
+/* Include fonts from fonts file */
+@font-face {
+  font-family: "avenir-light";
+  src: url(../fonts/Avenir\ Light.ttf) format(truetype);
+}
+/* 
+  --imprint-background: #14326f;
+  --imprint-heading: #f09035;
+  --imprint-text: #f8d365;
+*/
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+/* Set fixed with to the elements */
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 780px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  background-color: var(--imprint-background);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--special-color);
+}
+/* global */
+body {
+  background-color: var(--imprint-background);
+  font-family: "avenir-light", sans-serif;
+  font-weight: lighter;
+}
+main#imprint section {
+  animation: fadeIn 1s ease forwards;
+  -webkit-animation: fadeIn 1s ease forwards;
+}
+/* add transition to all elements for page transition */
+section * {
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
+}
+section {
+  z-index: 90;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgba(var(--secondary));
+  font-family: "Playfair Display", sans-serif;
+}
+p {
+  margin: 0 !important;
+  max-width: unset !important;
+  margin-bottom: 25px !important;
+}
+ul {
+  list-style: unset;
+  padding-left: 50px;
+}
+p,
+ul li {
+  color: rgba(var(--secondary)) !important;
+  font-size: 20px;
+  line-height: 1.6;
+}
+p.within {
+  margin: 0 !important;
+}
+.break {
+  margin-bottom: 50px;
+}
+/* layout */
+.man {
+  padding-top: 100px;
+}
+span {
+  text-decoration: underline;
+  color: rgba(var(--secondary));
+}
+h1 {
+  font-weight: 400;
+  font-size: 57px;
+  text-transform: uppercase;
+  text-align: left;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+footer {
+  padding: 0 !important;
+  background-color: unset;
+}
+footer a {
+  text-transform: uppercase;
+}
+a {
+  cursor: pointer;
+}
+.break:last-child {
+  margin: 0;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  z-index: 5;
+  color: rgba(var(--secondary)) !important;
+}
+.title {
+  font-family: "playfair display";
+}
+.goHome {
+  text-decoration: none;
+}
+
+.background {
+  opacity: 0;
+  z-index: 1;
+}
+/* responsive */
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 17px;
+  }
+  p,
+  ul li {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  p {
+    margin-bottom: 20px !important;
+  }
+  .break {
+    margin-bottom: 40px;
+  }
+}

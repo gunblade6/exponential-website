@@ -70,6 +70,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .background {
   position: fixed;
   height: 100vh;
@@ -79,6 +80,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
 }
 .background::after {
   content: "";
@@ -91,6 +97,22 @@ body {
 }
 img {
   min-width: 100%;
+}
+.theContent {
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  animation: fadeIn 1s ease forwards;
+  -webkit-animation: fadeIn 1s ease forwards;
+}
+section {
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
 }
 main > header {
   height: 100px;
@@ -306,6 +328,11 @@ svg path {
 footer {
   background-color: rgba(var(--secondary));
   padding: 20px 0;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
 }
 footer .container {
   display: flex;
@@ -322,7 +349,7 @@ font-family: 'avenir-light', sans-serif;
 */
 @media screen and (max-width: 992px) {
   section.main .date {
-    align-self: center;
+    align-self: flex-start;
   }
   .services_card {
     width: 650px;
@@ -331,14 +358,16 @@ font-family: 'avenir-light', sans-serif;
 @media screen and (max-width: 767px) {
   main > header {
     padding: 0 15px;
+    border-width: 5px;
   }
   main .service {
     font-size: 12px;
     border: none;
   }
   section.main {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
+
   main > header .logo {
     font-size: 32px;
   }
@@ -355,6 +384,7 @@ font-family: 'avenir-light', sans-serif;
   section.main .text {
     display: flex;
     flex-direction: column;
+    align-self: center;
   }
   section.services h2 {
     font-size: 22px;
@@ -362,6 +392,8 @@ font-family: 'avenir-light', sans-serif;
   .button {
     font-size: 12px;
     align-self: center;
+    margin-top: 40px;
+    padding: 15px 30px;
   }
   svg {
     max-width: 25px;
@@ -371,6 +403,11 @@ font-family: 'avenir-light', sans-serif;
   }
   .background {
     background-image: url(../assets/bg-verical.webp);
+    transition: 200ms ease;
+    -webkit-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -ms-transition: 200ms ease;
+    -o-transition: 200ms ease;
   }
   .services_card {
     padding: 15px;
@@ -391,5 +428,14 @@ font-family: 'avenir-light', sans-serif;
 @media screen and (max-width: 450px) {
   .services_card {
     width: 90%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
