@@ -5,7 +5,7 @@ window.onclick = function (e) {
     content.forEach((e) => (e.style.opacity = `0`));
     background.style.cssText = `opacity: 1;`;
     setTimeout(() => {
-      location.href = `../`;
+      location.href = `../index.html`;
     }, 500);
   }
 };

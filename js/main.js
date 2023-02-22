@@ -8,6 +8,6 @@ imprintButton.addEventListener(`click`, () => {
   footer.style.opacity = `0`;
   mainElement.style.backgroundColor = `#fff`;
   setTimeout(() => {
-    location.href = `../imprint/`;
+    location.href = `./imprint/index.html`;
   }, 500);
 });
