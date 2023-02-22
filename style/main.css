@@ -225,6 +225,14 @@ section.main .date span:last-child {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+}
+.button:hover {
+  background-color: rgba(var(--gray));
 }
 section.services {
   min-height: 400px;
